@@ -11,6 +11,8 @@ namespace CLApp
             Person kopo = new Person(Extensions.getName("First Name"), Extensions.getName("Second Name"));
 
             Console.WriteLine(kopo);
+            Extensions.showInColor(kopo.firstName, ConsoleColor.Green);
+            Extensions.showInColor(kopo.secondName, ConsoleColor.Red);
         }
     }
 }
