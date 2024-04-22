@@ -11,10 +11,10 @@ namespace CLApp.Models
         public string firstName { get; set; }
         public string secondName { get; set; }
 
-        public Person(string firstName, string secondName)
+        public Person(string? firstName, string? secondName)
         {
-            this.firstName = firstName;
-            this.secondName = secondName;
+            this.firstName = firstName??= "unknown FirstName";
+            this.secondName = secondName??= "unknown SecondName";
         }
 
         public override string ToString() => $"{firstName} {secondName}";

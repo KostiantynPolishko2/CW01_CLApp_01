@@ -9,16 +9,16 @@ namespace CLApp.Models
 {
     public static class Extensions
     {
-        public static string? getName(in string txt)
+        public static string? getName(in string txt="text")
         {
             Console.Write($"enter {txt}:\t");
             return Console.ReadLine();
         }
 
-        public static void showInColor(in string txt, ConsoleColor color = ConsoleColor.Black)
+        public static void showInColor(string txt, ConsoleColor color = ConsoleColor.Black)
         {
             Console.BackgroundColor = color;
-            Console.WriteLine(txt);
+            Console.WriteLine(txt != String.Empty? txt : "Text empty!!!");
             Console.BackgroundColor = ConsoleColor.Black;
         }
     }
