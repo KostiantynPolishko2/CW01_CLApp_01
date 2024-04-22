@@ -11,10 +11,10 @@ namespace CLApp.Models
         public string firstName { get; set; }
         public string secondName { get; set; }
 
-        public Person(string firstName, string lastName)
+        public Person(string firstName, string secondName)
         {
             this.firstName = firstName;
-            secondName = lastName;
+            this.secondName = secondName;
         }
 
         public override string ToString() => $"{firstName} {secondName}";

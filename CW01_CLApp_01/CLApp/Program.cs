@@ -8,7 +8,7 @@ namespace CLApp
         {
             Console.WriteLine("Start project!");
 
-            Person kopo = new Person("Kostiantyn", "Polishko");
+            Person kopo = new Person(Extensions.getName("First Name"), Extensions.getName("Second Name"));
 
             Console.WriteLine(kopo);
         }
